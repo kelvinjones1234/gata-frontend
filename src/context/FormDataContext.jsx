@@ -58,7 +58,7 @@ export const FormDataProvider = ({ children }) => {
             amount: feeAmount * 100, // Amount should be in kobo for Paystack
             currency: "NGN",
             email: user.email,
-            callback_url: "http://localhost:5173/receipt-page/",
+            callback_url: "https://schoolfeepaymentsystem.vercel.app/receipt-page/",
             metadata: metadata,
           }),
         }
