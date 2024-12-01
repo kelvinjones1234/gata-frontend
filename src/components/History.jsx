@@ -22,7 +22,7 @@ const History = () => {
     const fetchPaymentRecords = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/transactions/",
+          "https://schoolpaymentsystem.pythonanywhere.com/api/transactions/",
           {
             headers: {
               "Content-Type": "application/json",

@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
         return;
       }
 
-      const response = await fetch("http://localhost:8000/api/token/", {
+      const response = await fetch("https://schoolpaymentsystem.pythonanywhere.com/api/token/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
   const registerUser = async (fullFormData) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/signup/",
+        "https://schoolpaymentsystem.pythonanywhere.com/api/signup/",
         {
           username: fullFormData.matricNumber.toLowerCase(),
           full_name: fullFormData.fullName,

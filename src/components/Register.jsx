@@ -34,7 +34,7 @@ const Register = () => {
     const fetchDepartments = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/departments/"
+          "https://schoolpaymentsystem.pythonanywhere.com/api/departments/"
         );
         setDepartments(response.data);
       } catch (error) {

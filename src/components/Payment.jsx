@@ -39,11 +39,11 @@ const Payment = () => {
   useEffect(() => {
     if (user) {
       axios
-        .get(`http://127.0.0.1:8000/api/fees/${user.dept_id}/`)
+        .get(`https://schoolpaymentsystem.pythonanywhere.com/api/fees/${user.dept_id}/`)
         .then((response) => setFees(response.data));
     }
 
-    axios.get("http://127.0.0.1:8000/api/other-data/").then((response) => {
+    axios.get("https://schoolpaymentsystem.pythonanywhere.com/api/other-data/").then((response) => {
       setLevels([...new Set(response.data.map((item) => item.level))]);
       setSemesters([...new Set(response.data.map((item) => item.semester))]);
     });

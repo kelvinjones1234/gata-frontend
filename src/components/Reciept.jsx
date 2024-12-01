@@ -58,7 +58,7 @@ const Receipt = () => {
       if (transactionData && !postSubmitted) {
         try {
           await axios.post(
-            `http://localhost:8000/api/transaction/`,
+            `https://schoolpaymentsystem.pythonanywhere.com/api/transaction/`,
             {
               matriculation_number: user.user_id,
               full_name: user.full_name,
