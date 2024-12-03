@@ -423,12 +423,12 @@ const Register = () => {
             </div>
             {/* Submit Button */}
             <span className="bg-white text-sm text-slate-500">
-              Don't have an account?{" "}
+              Already have an account?{" "}
               <Link
-                to={"/register"}
+                to={"/login"}
                 className="text-blue-500 hover:text-blue-800"
               >
-                Register
+                Login
               </Link>
             </span>
 
